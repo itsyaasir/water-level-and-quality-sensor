@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -d dist",
     "dev": "nodemon --exec babel-node ./server.js",
-    "start": "yarn run build && node dist/index.js",
+    "start": "yarn run build && node dist/server.js",
     "test": "nyc --reporter=text mocha --config=test/.mocharc.json",
     "test:watch": "mocha --config=test/.mocharc.json -- --watch",
     "sequelize": "babel-node node_modules/.bin/sequelize $*",
